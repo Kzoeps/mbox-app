@@ -10,14 +10,17 @@
   },
   "dependencies": {
     "expo": "~48.0.6",
+    "expo-camera": "^13.2.1",
     "expo-constants": "^14.2.1",
+    "expo-dev-client": "~2.1.5",
     "expo-status-bar": "~1.4.4",
     "react": "18.2.0",
     "react-native": "0.71.3",
     "react-native-webview": "11.26.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "eas-cli": "^3.8.1"
   },
   "private": true
 }
