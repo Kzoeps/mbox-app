@@ -2,13 +2,13 @@
   "expo": {
     "name": "mbox-app",
     "slug": "mbox-app",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "permissions": [
-"android.permission.MODIFY_AUDIO_SETTINGS"
-],
+      "android.permission.MODIFY_AUDIO_SETTINGS"
+    ],
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -18,7 +18,9 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "m.box",
+      "buildNumber": 1
     },
     "android": {
       "adaptiveIcon": {

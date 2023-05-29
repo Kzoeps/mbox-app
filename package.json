@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
-    "eas-cli": "^3.8.1"
+    "eas-cli": "^3.13.1"
   },
   "private": true
 }
