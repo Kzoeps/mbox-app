@@ -5,6 +5,12 @@ import { StatusBar } from "react-native";
 import { StyleSheet } from "react-native";
 import { Camera } from 'expo-camera';
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});
+
 export default function App() {
   useEffect(() => {
     (async () => {
@@ -15,6 +21,7 @@ export default function App() {
     return (
       <>
       <WebView
+      collapsable={false}
         allowsInlineMediaPlayback={true}
         originWhitelist={["*"]}
         javaScriptEnabled
@@ -23,13 +30,8 @@ export default function App() {
         style={styles.container}
         source={{ uri: "https://mbox.kongtsey.com" }}
       />
-      <StatusBar backgroundColor={'black'} translucent={false}/>
+      <StatusBar collapsable={false} backgroundColor={'black'} translucent={false}/>
       </>
     );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
