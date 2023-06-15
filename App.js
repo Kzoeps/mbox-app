@@ -14,7 +14,10 @@ const styles = StyleSheet.create({
 export default function App() {
   useEffect(() => {
     (async () => {
-      const { status } = await Camera.requestCameraPermissionsAsync();
+      const { granted } = await Camera.getCameraPermissionsAsync();
+      if (!granted) { 
+        const { status } = await Camera.requestCameraPermissionsAsync();
+      }
     })();
   }, []);
   
